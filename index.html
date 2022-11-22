@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://asset20.ckassets.com/wp/wp-content/themes/CashKaro_WP_V1/img/favicon.ico" type="image/x-icon">
+    <title>Best Coupons, Offers, Promo Codes & Cashback Deals | CashKaro.com</title>
+</head>
+<body>
+    <!-- Icons -->
+    <svg width="0" height="0" class="hidden">
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="search">
+          <path d="M13.4733 12.5266L11 10.0733C11.9601 8.87621 12.425 7.3568 12.2992 5.82747C12.1734 4.29814 11.4664 2.87512 10.3237 1.85103C9.18091 0.82694 7.6892 0.27961 6.15528 0.321583C4.62136 0.363557 3.16181 0.991644 2.07676 2.0767C0.991705 3.16175 0.363618 4.6213 0.321644 6.15522C0.279671 7.68914 0.827001 9.18085 1.85109 10.3236C2.87519 11.4664 4.2982 12.1733 5.82753 12.2991C7.35686 12.4249 8.87627 11.96 10.0733 10.9999L12.5267 13.4533C12.5886 13.5158 12.6624 13.5654 12.7436 13.5992C12.8249 13.633 12.912 13.6505 13 13.6505C13.088 13.6505 13.1751 13.633 13.2564 13.5992C13.3376 13.5654 13.4114 13.5158 13.4733 13.4533C13.5935 13.329 13.6607 13.1628 13.6607 12.9899C13.6607 12.817 13.5935 12.6509 13.4733 12.5266V12.5266ZM6.33333 10.9999C5.41035 10.9999 4.5081 10.7262 3.74067 10.2135C2.97324 9.70068 2.3751 8.97185 2.02189 8.11913C1.66868 7.2664 1.57627 6.32809 1.75633 5.42285C1.9364 4.5176 2.38085 3.68608 3.0335 3.03344C3.68614 2.38079 4.51766 1.93634 5.42291 1.75627C6.32815 1.57621 7.26646 1.66862 8.11919 2.02183C8.97191 2.37504 9.70074 2.97318 10.2135 3.74061C10.7263 4.50804 11 5.41029 11 6.33327C11 7.57095 10.5083 8.75793 9.63316 9.6331C8.75799 10.5083 7.57101 10.9999 6.33333 10.9999V10.9999Z" fill="#898A8D"></path>
+        </symbol>
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" id="Heart">
+          <rect width="16" height="16" fill="url(#pattern0)"></rect>
+          <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0_7_32" transform="scale(0.0104167)"></use>
+            </pattern>
+            <image id="image0_7_32" width="96" height="96" xlink:href="data:image/png;base64,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"></image>
+          </defs>
+        </symbol>
+        <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="cup">
+          <path d="M19 2H16V1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0H5C4.73478 0 4.48043 0.105357 4.29289 0.292893C4.10536 0.48043 4 0.734784 4 1V2H1C0.734784 2 0.48043 2.10536 0.292893 2.29289C0.105357 2.48043 0 2.73478 0 3V6C0 7.06087 0.421427 8.07828 1.17157 8.82843C1.92172 9.57857 2.93913 10 4 10H5.54C6.44453 11.0091 7.66406 11.6824 9 11.91V14H8C7.20435 14 6.44129 14.3161 5.87868 14.8787C5.31607 15.4413 5 16.2044 5 17V19C5 19.2652 5.10536 19.5196 5.29289 19.7071C5.48043 19.8946 5.73478 20 6 20H14C14.2652 20 14.5196 19.8946 14.7071 19.7071C14.8946 19.5196 15 19.2652 15 19V17C15 16.2044 14.6839 15.4413 14.1213 14.8787C13.5587 14.3161 12.7956 14 12 14H11V11.91C12.3359 11.6824 13.5555 11.0091 14.46 10H16C17.0609 10 18.0783 9.57857 18.8284 8.82843C19.5786 8.07828 20 7.06087 20 6V3C20 2.73478 19.8946 2.48043 19.7071 2.29289C19.5196 2.10536 19.2652 2 19 2ZM4 8C3.46957 8 2.96086 7.78929 2.58579 7.41421C2.21071 7.03914 2 6.53043 2 6V4H4V6C4.0022 6.68171 4.12056 7.35806 4.35 8H4ZM12 16C12.2652 16 12.5196 16.1054 12.7071 16.2929C12.8946 16.4804 13 16.7348 13 17V18H7V17C7 16.7348 7.10536 16.4804 7.29289 16.2929C7.48043 16.1054 7.73478 16 8 16H12ZM14 6C14 7.06087 13.5786 8.07828 12.8284 8.82843C12.0783 9.57857 11.0609 10 10 10C8.93913 10 7.92172 9.57857 7.17157 8.82843C6.42143 8.07828 6 7.06087 6 6V2H14V6ZM18 6C18 6.53043 17.7893 7.03914 17.4142 7.41421C17.0391 7.78929 16.5304 8 16 8H15.65C15.8794 7.35806 15.9978 6.68171 16 6V4H18V6Z" fill="black"></path>
+        </symbol>
+    </svg>
+    <header>
+        <nav>
+            <a href="" class="logo">
+                <img src="assets/images/logoCK.png" alt="CashKaro Logo">
+            </a>
+            <span class="nav-refer">
+                <svg class="icon">
+                    <use xlink:href="#cup"></use>
+                </svg>
+                Refer & Earn ₹250
+            </span>
+        </nav>
+        <div class="search-input">
+            <svg class="icon">
+                <use xlink:href="#search"></use>
+            </svg>
+            <input type="search" name="search" id="" placeholder="Search for brands, deals or products">
+        </div>
+    </header>
+    <main>
+        <section class="intro-banner">
+            <h2>
+                Hi Ayushman,
+            </h2>
+            <p>₹100 Confirmed Cashback + Rewards can be earned by doing single or multiple transactions.</p>
+            <div class="intro-img">
+                <img src="assets/images/coin-img.png" alt="">
+            </div>
+        </section>
+
+        <section class="brand-slider">
+            <ul class="brand-list">
+                <li class="active-brand"><a href=""><img src="assets/images/ajio.png" alt=""></a></li>
+                <li><a href=""><img src="assets/images/libas.png" alt=""></a></li>
+                <li><a href=""><img src="assets/images/nykaa.png" alt=""></a></li>
+                <li class="blur-effect"><a href=""><img src="assets/images/cliq.png" alt=""></a></li>
+            </ul>
+        </section>
+        <aside class="ad-section">
+            <img src="assets/images/ad-banner.png" alt="">
+        </aside>
+        <section class="deals-section main-container">
+            <h2 class="head-title">Blink-and-miss deals </h2>
+            <p class="sub-desc">Expiring soon, so you know what to do!</p>
+
+            <div class="product-deals">
+                <div class="product-wrapper">
+                    <div class="product-item">
+                        <div class="product-box">
+                            <div class="white-bg">
+                                <img src="assets/images/wow.png" alt="" class="product-brand">
+                                <img src="assets/images/wow-product.png" alt="" class="product-item">
+                            </div>
+                            <div class="price-btn">
+                                <span class="original-price">₹1175</span>
+                                <span class="offer-price">₹645</span>
+                                <div class="flash-price">
+                                    <img src="./assets/images/bolt.png" alt="">
+                                    <span>Flash Price</span>
+                                    <img src="./assets/images/bolt.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="product-title">Ultimate onion hair kit</p>
+                        <a href="" class="extra-coupons">
+                            + Free caffeine serum worth ₹599
+                        </a>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-box">
+                            <div class="white-bg">
+                                <img src="assets/images/brandLogo.png" alt="" class="product-brand">
+                                <img src="assets/images/product2.png" alt="" class="product-item">
+                            </div>
+                            <div class="price-btn">
+                                <span class="original-price">₹1499</span>
+                                <span class="offer-price">₹520</span>
+                                <div class="flash-price">
+                                    <img src="./assets/images/bolt.png" alt="">
+                                    <span>Flash Price</span>
+                                    <img src="./assets/images/bolt.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="product-title">A2 Desi cow ghee 500 gms</p>
+                        <a href="" class="extra-coupons">
+                            + Free Sample
+                        </a>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-box">
+                            <div class="white-bg">
+                                <img src="assets/images/brandLogo2.png" alt="" class="product-brand">
+                                <img src="assets/images/product3.png" alt="" class="product-item">
+                            </div>
+                            <div class="price-btn">
+                                <span class="original-price">₹998</span>
+                                <span class="offer-price">₹496</span>
+                                <div class="flash-price">
+                                    <img src="./assets/images/bolt.png" alt="">
+                                    <span>Flash Price</span>
+                                    <img src="./assets/images/bolt.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="product-title">Coffee shampoo & conditioner duo</p>
+                        <a href="" class="extra-coupons">
+                            + Free products worth ₹798
+                        </a>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-box">
+                            <div class="white-bg">
+                                <img src="assets/images/brandLogo3.png" alt="" class="product-brand">
+                                <img src="assets/images/product4.png" alt="" class="product-item">
+                            </div>
+                            <div class="price-btn">
+                                <span class="original-price">₹425</span>
+                                <span class="offer-price">₹147</span>
+                                <div class="flash-price">
+                                    <img src="./assets/images/bolt.png" alt="">
+                                    <span>Flash Price</span>
+                                    <img src="./assets/images/bolt.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="product-title">Coffee shampoo & conditioner duo</p>
+                        <a href="" class="extra-coupons">
+                            + Free products worth ₹798
+                        </a>
+                    </div>
+                    <div class="product-item">
+                        <div class="product-box">
+                            <div class="white-bg">
+                                <img src="assets/images/brandLogo4.png" alt="" class="product-brand">
+                                <img src="assets/images/product5.png" alt="" class="product-item">
+                            </div>
+                            <div class="price-btn">
+                                <!-- <span class="original-price"></span> -->
+                                <span class="offer-price">Flat ₹250 rewards</span>
+                                <div class="flash-price">
+                                    <img src="./assets/images/bolt.png" alt="">
+                                    <span>Flash Price</span>
+                                    <img src="./assets/images/bolt.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="product-title">₹500 Filpkart e-gift voucher</p>
+                        <a href="" class="extra-coupons">
+                            + Free products worth ₹798
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="deal-desc">The flash prices are calculated based on the number of existing discount codes applied. You may find price difference if all available codes are not applied.</p>
+        </section>
+
+        <!-- Continue Browsing -->
+        <section class="continue-section main-container">
+            <h2 class="head-title">Continue Browsing</h2>
+            <p class="sub-desc">Brands you viewed recently and every new thing about them</p>
+            <div class="brand-offers">
+                <div class="brand-wrapper">
+                    <div class="brand-box">
+                        <div class="img-box">
+                            <img src="assets/images/amazon.png" alt="">
+                        </div>
+                        <div class="offer-rewards">
+                            <span>Earn upto</span>
+                            <strong>10%</strong>
+                            <span>Rewards</span>
+                        </div>
+                    </div>
+                    <p class="offer-duration">1d: 20h: 56m</p>
+                </div>
+                <div class="brand-wrapper">
+                    <div class="brand-box">
+                        <div class="img-box">
+                            <img src="assets/images/tata-brand.png" alt="">
+                        </div>
+                        <div class="offer-rewards">
+                            <span>Earn upto</span>
+                            <strong>22.5%</strong>
+                            <span>Cashback</span>
+                        </div>
+                    </div>
+                    <p class="offer-duration">1d: 20h: 56m</p>
+                </div>
+                <div class="brand-wrapper">
+                    <div class="brand-box">
+                        <div class="img-box">
+                            <img src="assets/images/wow-brand.png" alt="">
+                        </div>
+                        <div class="offer-rewards">
+                            <span>Earn upto</span>
+                            <strong>22.5%</strong>
+                            <span>Rewards</span>
+                        </div>
+                    </div>
+                    <!-- <p class="offer-duration">1d: 20h: 56m</p> -->
+                </div>
+
+                <div class="brand-wrapper">
+                    <div class="brand-box">
+                        <div class="img-box">
+                            <img src="assets/images/myntra.png" alt="">
+                        </div>
+                        <div class="offer-rewards">
+                            <span>Earn upto</span>
+                            <strong>8%</strong>
+                            <span>Rewards</span>
+                        </div>
+                    </div>
+                    <p class="offer-duration">1d: 20h: 56m</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-cashkaro">
+            <div class="ad-banner main-container">
+                <h2>New on CashKaro</h2>
+                <p>We are pleased to announce that we have brought these brands on CK for you</p>
+            </div>
+            <div class="ad-slider">
+                <div class="slider-container">
+                    <div class="ad-brand">
+                        <img src="assets/images/hm.png" alt="">
+                    </div>
+                    <div class="ad-banner">
+                        <img src="assets/images/ad_banner.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offer Stores -->
+        <section class="offer-stores">
+            <h2 class="head-title main-container">OFFER/STORIES </h2>
+            <p class="sub-desc main-container">Offers that you can’t miss. This is a sample text that should explain the offers.</p>
+            <div class="slider-container">
+                <div class="slider-item">
+                    <img src="assets/images/card1.png" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="assets/images/card1.png" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="assets/images/card1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Like Section -->
+        <section class="like-section">
+            <h2 class="head-title main-container">YOU MAY ALSO LIKE</h2>
+            <p class="sub-desc main-container">New brands you may like, inspired by your recent views</p>
+
+            <div class="like-wrapper">
+                <div class="brand-wrapper">
+                    <div class="brand-box">
+                        <div class="img-box">
+                            <img src="assets/images/like1.png" alt="">
+                        </div>
+                        <div class="offer-rewards">
+                            <span class="bold-text">Upto 18% cashback</span>
+                            <span class="blue-text">Cashback tracks in 1 hour</span>
+                        </div>
+                    </div>
+                    <p class="offer-duration">Because you viewed Netmeds</p>
+                </div>
+                <div class="brand-wrapper">
+                    <div class="brand-box">
+                        <div class="img-box">
+                            <img src="assets/images/like2.png" alt="">
+                        </div>
+                        <div class="offer-rewards">
+                            <span class="bold-text">Upto 25% cashback</span>
+                            <span class="blue-text">Cashback tracks in 1 hour</span>
+                        </div>
+                        <div class="offer-desc">
+                            <p>Flat 15% Off Code Sitewide + Upto 18% CashKaro Cashback on all Oziva Orders</p>
+                        </div>
+                    </div>
+                    <p class="offer-duration">Because you viewed Netmeds</p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Trending -->
+        <section class="trend-section main-container">
+            <h2 class="head-title">TRENDING</h2>
+            <p class="sub-desc">Some of the most popular things people have been searching for on CashKaro</p>
+            <ul>
+                <li>50% off sitewide on Myntra</li>
+                <li>50% + 25% offcode on Khadi Essentials</li>
+                <li>Sitewide sale, flat 20% off + 20% off code</li>
+                <li>Espresso body wash by mCaffeine</li>
+                <li>10% off sitewide on H&M</li>
+            </ul>
+        </section>
+
+        <!-- Coupons -->
+        <section class="coupons-section">
+            <h2 class="head-title main-container">TOP COUPONS</h2>
+            <p class="sub-desc main-container">A collection of coupons our partners are offering, exclusively for you.</p>
+            <div class="coupon-slider">
+                <div class="coupon-item">
+                    <img src="assets/images/coupon1.png" alt="">
+                </div>
+                <div class="coupon-item">
+                    <img src="assets/images/coupon2.png" alt="">
+                </div>
+                <div class="coupon-item">
+                    <img src="assets/images/coupon1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- values -->
+        <section class="values-section main-container">
+            <h2 class="head-title">WE VALUE YOU</h2>
+            <p class="sub-desc">We bring you the best brands that we think will bring great value to your life.</p>
+            <div class="value-slider">
+                <div class="value-container">
+                    <div class="value-box">
+                        <div class="value-img">
+                            <img src="assets/images/value.png" alt="">
+                            <h2>Meet your new <span>medicine</span> shop!</h2>
+                        </div>
+                        <div class="value-desc">
+                            <p>Finding medicines shouldn’t be in any way complicated. That’s why we bring to you the best of healthcare providers within the comfort of your home.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="value-container">
+                    <div class="value-box">
+                        <div class="value-img">
+                            <img src="assets/images/value.png" alt="">
+                            <h2>Meet your new <span>medicine</span> shop!</h2>
+                        </div>
+                        <div class="value-desc">
+                            <p>Finding medicines shouldn’t be in any way complicated. That’s why we bring to you the best of healthcare providers within the comfort of your home.</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+            
+            </div>
+        </section>
+
+        <section class="banner-stories">
+            <div class="brand-profile">
+                <img src="assets/images/profile.png" alt="">
+                <div class="profile-detail">
+                    <p>Delsey</p>
+                    <span>40-50% off</span>
+                </div>
+            </div>
+            <img class="story-image" src="assets/images/banner-story.png" alt="">
+        </section>
+
+        <!-- Mobile Section -->
+        <section class="mobiles-section main-container">
+            <h2 class="head-title">BEST SELLERS: MOBILES</h2>
+            <p class="sub-desc">We bring you the best brands that we think will bring great value to your life.</p>
+            <div class="mobile-grid">
+                <div class="mobile-item">
+                    <img src="assets/images/mobile1.png" alt="">
+                    <p>Apple iPhone 13</p>
+                    <span>8% Cashback</span>
+                </div>
+                <div class="mobile-item">
+                    <img src="assets/images/mobile2.png" alt="">
+                    <p>OPPO F17</p>
+                    <span>12% Cashback</span>
+                </div>
+                <div class="mobile-item">
+                    <img src="assets/images/mobile3.png" alt="">
+                    <p>Galaxy A23</p>
+                    <span>3% Cashback</span>
+                </div>
+                <div class="mobile-item">
+                    <img src="assets/images/mobile4.png" alt="">
+                    <p>One+ Nord 5G</p>
+                    <span>8% Cashback</span>
+                </div>
+                <div class="mobile-item">
+                    <img src="assets/images/mobile5.png" alt="">
+                    <p>Samsung S22 Ultra</p>
+                    <span>12% Cashback</span>
+                </div>
+                <div class="mobile-item">
+                    <img src="assets/images/mobile6.png" alt="">
+                    <p>OPPO F21</p>
+                    <span>3% Cashback</span>
+                </div>
+            </div>
+            <a href="" class="view-all">View all →</a>
+        </section>
+
+        <section class="customer-section">
+            <div class="main-container">
+                <h2 class="head-title">Hey there, Ayushman!</h2>
+                <p class="sub-desc">We wanted to bring more relevant offers to you.  Kindly update your preferences</p>
+            </div>
+
+            <div class="customer-cardslider">
+                <div class="card">
+                    <p>Select offers that interests you</p>
+                </div>
+                <div class="card card2">
+                    <p>Fashion</p>
+                    <span class="sub-des">100+ Offers</span>
+                    <span class="value">12-24% Cashback</span>
+                    <a href="">
+                        <svg class="icon">
+                            <use xlink:href="#Heart"></use>
+                        </svg>
+                        Like
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="product-section">
+            <img class="brand-img" src="assets/images/product.png" alt="">
+            <img class="product-img" src="assets/images/item1.png" alt="">
+            <div class="discount-sale">
+                <p class="product-name">⚡️ Detan Cream</p>
+                <div class="price-discount">
+                    <span class="strike">₹350</span>
+                    <span class="price-sale">₹645</span>
+                    <span class="hours-left">19 hours left</span>
+                </div>
+                <p class="strike-value">15% off code + Flat 17% cashback</p>
+                <img src="assets/images/shipping.png" alt="">
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div>
+            <p>Is this offer useful?</p>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.6667 0.333252H3.18C2.71213 0.333408 2.25912 0.497591 1.89979 0.797236C1.54046 1.09688 1.29755 1.51302 1.21333 1.97325L0.366666 6.63992C0.313912 6.92821 0.325163 7.22458 0.399623 7.50804C0.474083 7.7915 0.609932 8.05514 0.797557 8.28029C0.985182 8.50544 1.22 8.6866 1.48539 8.81096C1.75078 8.93531 2.04025 8.99982 2.33333 8.99992H5.37333L5 9.95325C4.84471 10.3707 4.793 10.8195 4.84929 11.2613C4.90558 11.7031 5.06821 12.1246 5.32321 12.4898C5.57821 12.8549 5.91798 13.1527 6.31337 13.3577C6.70877 13.5627 7.14798 13.6687 7.59333 13.6666C7.72157 13.6663 7.84702 13.6291 7.95462 13.5593C8.06222 13.4895 8.14742 13.3902 8.2 13.2733L10.1 8.99992H11.6667C12.1971 8.99992 12.7058 8.78921 13.0809 8.41413C13.456 8.03906 13.6667 7.53035 13.6667 6.99992V2.33325C13.6667 1.80282 13.456 1.29411 13.0809 0.919038C12.7058 0.543966 12.1971 0.333252 11.6667 0.333252ZM9 8.19325L7.18667 12.2733C7.00113 12.2171 6.82905 12.1236 6.68103 11.9984C6.53301 11.8733 6.41218 11.7191 6.32599 11.5455C6.2398 11.3719 6.19007 11.1824 6.17987 10.9888C6.16967 10.7953 6.1992 10.6016 6.26667 10.4199L6.62 9.46659C6.69529 9.26508 6.72071 9.04835 6.69408 8.8349C6.66746 8.62144 6.58959 8.4176 6.46711 8.24076C6.34463 8.06392 6.18119 7.91934 5.99073 7.81936C5.80027 7.71938 5.58844 7.66696 5.37333 7.66659H2.33333C2.23539 7.66674 2.13862 7.64532 2.0499 7.60384C1.96118 7.56236 1.88268 7.50184 1.82 7.42659C1.75578 7.35237 1.70873 7.26489 1.68223 7.17039C1.65572 7.07589 1.65041 6.97671 1.66667 6.87992L2.51333 2.21325C2.54173 2.05795 2.62432 1.91776 2.74641 1.81765C2.86849 1.71754 3.02214 1.66401 3.18 1.66659H9V8.19325ZM12.3333 6.99992C12.3333 7.17673 12.2631 7.3463 12.1381 7.47132C12.013 7.59635 11.8435 7.66659 11.6667 7.66659H10.3333V1.66659H11.6667C11.8435 1.66659 12.013 1.73682 12.1381 1.86185C12.2631 1.98687 12.3333 2.15644 12.3333 2.33325V6.99992Z" fill="black"/>
+            </svg>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.33333 13.6667H10.82C11.2879 13.6666 11.7409 13.5024 12.1002 13.2028C12.4595 12.9031 12.7024 12.487 12.7867 12.0267L13.6333 7.36008C13.6861 7.07179 13.6748 6.77542 13.6004 6.49196C13.5259 6.2085 13.3901 5.94486 13.2024 5.71971C13.0148 5.49456 12.78 5.3134 12.5146 5.18904C12.2492 5.06469 11.9597 5.00018 11.6667 5.00008H8.62667L9 4.04675C9.15529 3.62934 9.207 3.18048 9.15071 2.7387C9.09442 2.29691 8.93179 1.87536 8.67679 1.51023C8.42179 1.1451 8.08202 0.847279 7.68663 0.642309C7.29123 0.437341 6.85202 0.331345 6.40667 0.333414C6.27843 0.333682 6.15298 0.370932 6.04538 0.440697C5.93778 0.510462 5.85258 0.609781 5.8 0.726748L3.9 5.00008H2.33333C1.8029 5.00008 1.29419 5.21079 0.919119 5.58587C0.544046 5.96094 0.333333 6.46965 0.333333 7.00008V11.6667C0.333333 12.1972 0.544046 12.7059 0.919119 13.081C1.29419 13.456 1.8029 13.6667 2.33333 13.6667ZM5 5.80675L6.81333 1.72675C6.99887 1.78289 7.17095 1.87642 7.31897 2.00158C7.46699 2.12674 7.58782 2.28089 7.67401 2.45452C7.7602 2.62815 7.80993 2.81758 7.82013 3.01116C7.83033 3.20474 7.8008 3.39835 7.73333 3.58008L7.38 4.53341C7.30471 4.73492 7.27929 4.95165 7.30592 5.1651C7.33254 5.37856 7.41041 5.5824 7.53289 5.75924C7.65537 5.93608 7.81881 6.08066 8.00927 6.18064C8.19973 6.28062 8.41156 6.33304 8.62667 6.33341H11.6667C11.7646 6.33326 11.8614 6.35468 11.9501 6.39616C12.0388 6.43764 12.1173 6.49816 12.18 6.57341C12.2442 6.64763 12.2913 6.73511 12.3178 6.82961C12.3443 6.92411 12.3496 7.02329 12.3333 7.12008L11.4867 11.7867C11.4583 11.9421 11.3757 12.0822 11.2536 12.1823C11.1315 12.2825 10.9779 12.336 10.82 12.3334H5V5.80675ZM1.66667 7.00008C1.66667 6.82327 1.7369 6.6537 1.86193 6.52868C1.98695 6.40365 2.15652 6.33341 2.33333 6.33341H3.66667V12.3334H2.33333C2.15652 12.3334 1.98695 12.2632 1.86193 12.1382C1.7369 12.0131 1.66667 11.8436 1.66667 11.6667V7.00008Z" fill="black"/>
+            </svg>
+                
+        </div>
+    </footer>
+</body>
+</html>
